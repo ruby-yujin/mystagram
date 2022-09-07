@@ -61,9 +61,6 @@
   margin-top: 4px;
   font-size: 12px;
 }
-.wrap .container .posts-item {
-  width: 100%;
-}
 .wrap .container .posts-item .img-slide-wrap .img-slide {
   display: flex;
   overflow: auto;
