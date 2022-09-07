@@ -82,15 +82,15 @@ body {
 .wrap .container .posts-item {
   width: 100%;
 }
-.wrap .container .posts-item .img-slide-wrap {
-  height: 590px;
-  overflow: hidden;
+.wrap .container .posts-item .img-slide-wrap .img-slide {
+  display: flex;
+  overflow: auto;
   scroll-snap-type: x mandatory;
 }
 .wrap .container .posts-item .img-slide-wrap .img-slide .img-slide-item {
+  flex: 0 0 100%;
   scroll-snap-align: start;
-  scroll-snap-stop: normal;
-  float: left;
+  scroll-snap-stop: always;
 }
 .wrap .container .posts-item .img-slide-wrap .img-slide .img-slide-item > img {
   width: 100%;

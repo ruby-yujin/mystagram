@@ -85,14 +85,14 @@ body {
     .posts-item {
       width: 100%;
       .img-slide-wrap {
-        height: 590px;
-        overflow: hidden;
-        scroll-snap-type: x mandatory;
         .img-slide {
+          display: flex;
+          overflow: auto;
+          scroll-snap-type: x mandatory;
           .img-slide-item {
+            flex: 0 0 100%;
             scroll-snap-align: start;
-            scroll-snap-stop: normal;
-            float: left;
+            scroll-snap-stop: always;
             > img {
               width: 100%;
               margin-top: -30px;
