@@ -1,27 +1,8 @@
-// 백그라운드 이미지
-.fixed-bg {
-  width: 470px;
-  margin: 0 auto;
-  border: 1px solid #ddd;
-  opacity: 0.7;
-
-  > img {
-    width: 100%;
-  }
-}
-
-body {
-  position: relative;
-}
 .wrap {
   .container {
     width: 470px;
     margin: 0 auto;
     border: 1px solid #ddd;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -235px;
     padding-bottom: 2rem;
     .header {
       height: 75px;
@@ -135,4 +116,9 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .wrap {
+    .container {
+      width: 100%;
+    }
+  }
 }
