@@ -1,99 +1,138 @@
 // 백그라운드 이미지
- .fixed-bg {
-    width: 470px;
-    margin: 0 auto;
-    border:1px solid #ddd;
-    opacity: 0.7;
-  
-    > img {
-        width: 100%;
-    
-    }
+.fixed-bg {
+  width: 470px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  opacity: 0.7;
+
+  > img {
+    width: 100%;
+  }
 }
 
 body {
-    position: relative;
+  position: relative;
 }
 .wrap {
-    .container {
-        width: 470px;
-        margin: 0 auto;
-        border:1px solid #ddd;
-        position: absolute;
-        top:0;
-        left:50%;
-        margin-left: -235px;
-        .header {
-            height: 75px;
-            border-bottom:1px solid #ddd;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .logo {
-                width: 200px;
-                height: 100%;
-                background: rgba(118, 118, 118,0.4);
-                color:#fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .icons {
-                width: 200px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap:0 20px;
-                li {
-                    a {
-                        display: block;
-                        width: 36px;
-                        > img{
-                            width: 100%;
-                        }
-                    }
-                }
-            }
+  .container {
+    width: 470px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -235px;
+    padding-bottom: 2rem;
+    .header {
+      height: 75px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        width: 152px;
+        height: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        > img {
+          width: 100%;
         }
-        .myname {
-            display: flex;
-            align-items: center;
-            padding-left: 10px;
-            height: 62px;
-            .myname-img {
-                width: 46px;
-                > img{
-                    width: 100%;
-                }
+      }
+      .icons {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 22px;
+        li {
+          a {
+            display: block;
+            width: 36px;
+            > img {
+              width: 100%;
             }
-            dl {
-                margin-left: 10px;
-                dt {
-                    font-size:16px;
-                    display: block;
-                    font-weight: 600;
-                }
-                dd {
-                    margin-top: 2px;
-                    font-size:12px;
-                }
-            }
+          }
         }
-        .posts-item{
-            width: 100%;
-            .img-slide-wrap{
-                .img-slide {
-                    height: 590px;
-                    overflow: hidden;
-                    > img {
-                        width: 100%;
-                        margin-top: -30px;
-                    }
-                }
-            }
-        }
+      }
     }
+    .myname {
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      height: 62px;
+      .myname-img {
+        width: 46px;
+        > img {
+          width: 100%;
+        }
+      }
+      dl {
+        margin-left: 10px;
+        dt {
+          font-size: 16px;
+          display: block;
+          font-weight: 600;
+        }
+        dd {
+          margin-top: 2px;
+          font-size: 12px;
+        }
+      }
+    }
+    .posts-item {
+      width: 100%;
+      .img-slide-wrap {
+        height: 590px;
+        overflow: hidden;
+        scroll-snap-type: x mandatory;
+        .img-slide {
+          .img-slide-item {
+            scroll-snap-align: start;
+            scroll-snap-stop: normal;
+            float: left;
+            > img {
+              width: 100%;
+              margin-top: -30px;
+            }
+          }
+        }
+      }
+      .post-word {
+        padding: 0 1rem;
+        .btn-wrap {
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0 12px;
+          > a {
+            display: inline-block;
+            width: 36px;
+            img {
+              width: 100%;
+            }
+          }
+          .btn-save {
+            margin-left: auto;
+          }
+        }
+        .like-counter {
+          font-weight: 600;
+        }
+        .post-text {
+          margin-top: 7px;
+          line-height: 1.2;
+          .user-name {
+            font-weight: 600;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
 }
-@media (min-width: 768px) {
-   
+@media (max-width: 768px) {
 }

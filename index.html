@@ -1,61 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ruby Mystagram</title>
 
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- style -->
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/style.css">
-</head>
-<body>
-    <div class="fixed-bg">
-        <img src="src/img/IMG_1609.jpg" alt="">
-    </div>
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <!-- <div class="fixed-bg">
+      <img src="src/img/IMG_1609.jpg" alt="" />
+    </div> -->
     <div class="wrap">
-        <div class="container">
-            <div class="header">
-                <h1 class="logo">
-                    logo
-                </h1>
-                <ul class="icons">
-                    <li><a href="">
-                        <img src="src/img/icons/icons8-github.gif" alt="github-icon">
-                    </a></li>
-                    <li><a href="">
-                        <img src="src/img/icons/icons8-heart-96.png" alt="heart-icon">
-                    </a></li>
-                    <li><a href="">
-                        <img src="src/img/icons/icons8-mail-96.png" alt="email-icon">
-                    </a></li>
-                </ul>
-            </div>
-            <div class="myname">
-                <div class="myname-img">
-                    <img src="src/img/icons/feat_ruby.png" alt="">
-                </div>
-                <dl>
-                    <dt>Park yujin</dt>
-                    <dd>프론트개발자를 꿈꾸는 '박유진'이라고 합니다.</dd>
-                </dl>
-            </div>
-            <div class="posts-item">
-                <div class="img-slide-wrap">
-                    <div class="img-slide">
-                        <img src="src/img/img_8134.jpg" alt="유진 이미지">
-                    </div>
-                </div>
-               
-            </div>
+      <div class="container">
+        <div class="header">
+          <h1 class="logo">
+            <img src="src/img/mystagram_logo.png" alt="logo" />
+          </h1>
+          <ul class="icons">
+            <li>
+              <a href="">
+                <img src="src/img/icons/icons8-github.gif" alt="github-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="src/img/icons/icons8-heart-96.png" alt="heart-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="src/img/icons/icons8-mail-96.png" alt="email-icon" />
+              </a>
+            </li>
+          </ul>
         </div>
+        <div class="myname">
+          <div class="myname-img">
+            <img src="src/img/icons/feat_ruby.png" alt="" />
+          </div>
+          <dl>
+            <dt>Park yujin</dt>
+            <dd>프론트개발자를 꿈꾸는 '박유진'이라고 합니다.</dd>
+          </dl>
+        </div>
+        <div class="posts-item">
+          <div class="img-slide-wrap">
+            <div class="img-slide">
+              <div class="img-slide-item">
+                <img src="src/img/img_8134.jpg" alt="유진 이미지" />
+              </div>
+              <div class="img-slide-item">
+                <img src="src/img/img_7783.jpg" alt="유진 이미지" />
+              </div>
+            </div>
+          </div>
+          <div class="post-word">
+            <div class="btn-wrap">
+              <a href="" class="btn-heart">
+                <img src="src/img/icons/icons8-heart-96.png" alt="heart-icon" />
+              </a>
+              <a href="" class="btn-heart">
+                <img
+                  src="src/img/icons/icons8-topic-96.png"
+                  alt="message-icon"
+                />
+              </a>
+              <a href="" class="btn-heart">
+                <img src="src/img/icons/icons8-web-96.png" alt="blog-icon" />
+              </a>
+              <a href="" class="btn-save">
+                <img
+                  src="src/img/icons/icons8-bookmark-192.png"
+                  alt="react-icon"
+                />
+              </a>
+            </div>
+            <strong class="like-counter">좋아요 20개</strong>
+            <div class="post-text">
+              <strong class="user-name">Park yujin</strong>
+              저는 이번에 같이 위코드 5조에 함께하게된 박유진이라고합니다. 아직
+              많이 부족하지만 잘부탁드려요
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

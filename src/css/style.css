@@ -20,6 +20,7 @@ body {
   top: 0;
   left: 50%;
   margin-left: -235px;
+  padding-bottom: 2rem;
 }
 .wrap .container .header {
   height: 75px;
@@ -29,20 +30,23 @@ body {
   align-items: center;
 }
 .wrap .container .header .logo {
-  width: 200px;
+  width: 152px;
   height: 100%;
-  background: rgba(118, 118, 118, 0.4);
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 1rem;
+}
+.wrap .container .header .logo > img {
+  width: 100%;
 }
 .wrap .container .header .icons {
   width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 20px;
+  gap: 0 22px;
 }
 .wrap .container .header .icons li a {
   display: block;
@@ -78,13 +82,50 @@ body {
 .wrap .container .posts-item {
   width: 100%;
 }
-.wrap .container .posts-item .img-slide-wrap .img-slide {
+.wrap .container .posts-item .img-slide-wrap {
   height: 590px;
   overflow: hidden;
+  scroll-snap-type: x mandatory;
 }
-.wrap .container .posts-item .img-slide-wrap .img-slide > img {
+.wrap .container .posts-item .img-slide-wrap .img-slide .img-slide-item {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  float: left;
+}
+.wrap .container .posts-item .img-slide-wrap .img-slide .img-slide-item > img {
   width: 100%;
   margin-top: -30px;
+}
+.wrap .container .posts-item .post-word {
+  padding: 0 1rem;
+}
+.wrap .container .posts-item .post-word .btn-wrap {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 12px;
+}
+.wrap .container .posts-item .post-word .btn-wrap > a {
+  display: inline-block;
+  width: 36px;
+}
+.wrap .container .posts-item .post-word .btn-wrap > a img {
+  width: 100%;
+}
+.wrap .container .posts-item .post-word .btn-wrap .btn-save {
+  margin-left: auto;
+}
+.wrap .container .posts-item .post-word .like-counter {
+  font-weight: 600;
+}
+.wrap .container .posts-item .post-word .post-text {
+  margin-top: 7px;
+  line-height: 1.2;
+}
+.wrap .container .posts-item .post-word .post-text .user-name {
+  font-weight: 600;
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
