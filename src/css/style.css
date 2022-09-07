@@ -1,25 +1,7 @@
-.fixed-bg {
-  width: 470px;
-  margin: 0 auto;
-  border: 1px solid #ddd;
-  opacity: 0.7;
-}
-.fixed-bg > img {
-  width: 100%;
-}
-
-body {
-  position: relative;
-}
-
 .wrap .container {
   width: 470px;
   margin: 0 auto;
   border: 1px solid #ddd;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -235px;
   padding-bottom: 2rem;
 }
 .wrap .container .header {
@@ -76,7 +58,7 @@ body {
   font-weight: 600;
 }
 .wrap .container .myname dl dd {
-  margin-top: 2px;
+  margin-top: 4px;
   font-size: 12px;
 }
 .wrap .container .posts-item {
@@ -126,6 +108,12 @@ body {
 .wrap .container .posts-item .post-word .post-text .user-name {
   font-weight: 600;
   margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .wrap .container {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
