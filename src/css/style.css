@@ -61,15 +61,23 @@
   margin-top: 4px;
   font-size: 12px;
 }
+.wrap .container .posts-item {
+  margin-top: 2rem;
+}
+.wrap .container .posts-item:first-child, .wrap .container .posts-item.mt0 {
+  margin-top: 0;
+}
 .wrap .container .posts-item .img-slide-wrap .img-slide {
   display: flex;
   overflow: auto;
   scroll-snap-type: x mandatory;
+  height: 590px;
 }
 .wrap .container .posts-item .img-slide-wrap .img-slide .img-slide-item {
   flex: 0 0 100%;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  overflow-y: hidden;
 }
 .wrap .container .posts-item .img-slide-wrap .img-slide .img-slide-item > img {
   width: 100%;

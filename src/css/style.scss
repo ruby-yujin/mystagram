@@ -64,15 +64,22 @@
       }
     }
     .posts-item {
+      margin-top: 2rem;
+      &:first-child , &.mt0 {
+        margin-top: 0;
+      }
       .img-slide-wrap {
         .img-slide {
           display: flex;
           overflow: auto;
           scroll-snap-type: x mandatory;
+          height: 590px;
+
           .img-slide-item {
             flex: 0 0 100%;
             scroll-snap-align: start;
             scroll-snap-stop: always;
+            overflow-y: hidden;
             > img {
               width: 100%;
               margin-top: -30px;
